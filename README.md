@@ -10,12 +10,11 @@ The app provides an interactive learning experience through an IT quiz system co
 - Responsive and user-friendly interface  
 
 ## Screenshots
-
-![Screen 1](assets/screenshots/myaiassistantapp1.jpg)  
-![Screen 2](assets/screenshots/myaiassistantapp2.jpg)  
-![Screen 3](assets/screenshots/myaiassistantapp3.jpg)  
-![Screen 4](assets/screenshots/myaiassistantapp4.jpg)  
-![Screen 5](assets/screenshots/myaiassistantapp5.jpg)  
+![Screen 1](lib/assets/screenshots/myaiassistantapp1.jpg)
+![Screen 2](lib/assets/screenshots/myaiassistantapp2.jpg)
+![Screen 3](lib/assets/screenshots/myaiassistantapp3.jpg)
+![Screen 4](lib/assets/screenshots/myaiassistantapp4.jpg)
+![Screen 5](lib/assets/screenshots/myaiassistantapp5.jpg) 
 
 ## Demo Video
 https://youtube.com/shorts/RELsiZtfrm4?feature=share
