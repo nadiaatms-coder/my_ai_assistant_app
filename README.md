@@ -1,6 +1,6 @@
 # Flutter AI Quiz App
 
-This video showcases a Flutter mobile application developed as part of my portfolio for a Junior AI Engineer role at LSE&C.
+This video showcases a Flutter mobile application developed as part of my portfolio for a Junior AI Engineer role at Elice Inc.
 
 The app provides an interactive learning experience through an IT quiz system combined with a simple AI-powered chat assistant. It is designed to demonstrate both mobile development skills and basic AI integration.
 
