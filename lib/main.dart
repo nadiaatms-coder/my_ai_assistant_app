@@ -19,8 +19,8 @@ class MyApp extends StatelessWidget {
       title: 'AI Quiz Game',
 
       theme: ThemeData(
-        primarySwatch: Colors.purple,
-        scaffoldBackgroundColor: Colors.purple.shade50,
+        primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: Colors.transparent,
       ),
 
       home: const WelcomeScreen(),

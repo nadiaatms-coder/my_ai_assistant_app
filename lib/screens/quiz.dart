@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/space_background.dart';
 
 class QuizScreen extends StatefulWidget {
   const QuizScreen({super.key});
@@ -105,42 +106,67 @@ class _QuizScreenState extends State<QuizScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final userName =
-        ModalRoute.of(context)!.settings.arguments as String;
+    final userName = ModalRoute.of(context)!.settings.arguments as String;
 
     var currentQ = questions[currentQuestion];
 
     return Scaffold(
+      backgroundColor: Colors.transparent,
       appBar: AppBar(
         title: Text("Question ${currentQuestion + 1}/10"),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(20),
-        child: Column(
-          children: [
-
-            Text(
-              currentQ['question'] as String,
-              style: const TextStyle(fontSize: 20),
-            ),
-
-            const SizedBox(height: 20),
-
-            ...(currentQ['answers'] as List<Map<String, Object>>)
-                .map((answer) {
-              return Container(
-                width: double.infinity,
-                margin: const EdgeInsets.only(bottom: 10),
-                child: ElevatedButton(
-                  onPressed: () => answerQuestion(
-                    answer['score'] as int,
-                    userName,
+      extendBodyBehindAppBar: true,
+      body: SpaceBackground(
+        child: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.all(20),
+            child: Column(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.1),
+                    borderRadius: BorderRadius.circular(15),
+                    border: Border.all(color: Colors.white24),
                   ),
-                  child: Text(answer['text'] as String),
+                  child: Text(
+                    currentQ['question'] as String,
+                    style: const TextStyle(
+                      fontSize: 20,
+                      color: Colors.white,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
                 ),
-              );
-            }).toList(),
-          ],
+                const SizedBox(height: 30),
+                ...(currentQ['answers'] as List<Map<String, Object>>).map((answer) {
+                  return Container(
+                    width: double.infinity,
+                    margin: const EdgeInsets.only(bottom: 12),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.blueAccent,
+                        padding: const EdgeInsets.symmetric(vertical: 15),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                      ),
+                      onPressed: () => answerQuestion(
+                        answer['score'] as int,
+                        userName,
+                      ),
+                      child: Text(
+                        answer['text'] as String,
+                        style: const TextStyle(color: Colors.white),
+                      ),
+                    ),
+                  );
+                }).toList(),
+              ],
+            ),
+          ),
         ),
       ),
     );
