@@ -1,16 +1,31 @@
-# my_ai_assistant_app
+# Flutter AI Quiz App
 
-A new Flutter project.
+This video showcases a Flutter mobile application developed as part of my portfolio for a Junior AI Engineer role at LSE&C.
 
-## Getting Started
+The app provides an interactive learning experience through an IT quiz system combined with a simple AI-powered chat assistant. It is designed to demonstrate both mobile development skills and basic AI integration.
 
-This project is a starting point for a Flutter application.
+## Features
+- Interactive quiz system with scoring and feedback  
+- AI chat assistant for answering fundamental IT questions  
+- Responsive and user-friendly interface  
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Screen 1](assets/screenshots/myaiassistantapp1.jpg)  
+![Screen 2](assets/screenshots/myaiassistantapp2.jpg)  
+![Screen 3](assets/screenshots/myaiassistantapp3.jpg)  
+![Screen 4](assets/screenshots/myaiassistantapp4.jpg)  
+![Screen 5](assets/screenshots/myaiassistantapp5.jpg)  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Demo Video
+https://youtube.com/shorts/RELsiZtfrm4?feature=share
+
+## Tech Stack
+- Flutter (Dart)  
+- Android SDK  
+
+## Project Purpose
+This project was built as part of my portfolio to demonstrate mobile development skills and basic AI integration for a Junior AI Engineer position.
+
+## Author
+Nadia
